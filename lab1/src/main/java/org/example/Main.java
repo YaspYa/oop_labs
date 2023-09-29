@@ -6,6 +6,6 @@ public class Main {
     public static void main(String[] args) {
         StringCalculator StrCalc = new StringCalculator();
 
-        System.out.println(StrCalc.add("1,2\n\n"));
+        System.out.println(StrCalc.add("1000,999,1001"));
     }
 }

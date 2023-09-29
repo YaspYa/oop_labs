@@ -34,4 +34,12 @@ public class StringCalculatorTest {
     public void StrignError(){
         assertEquals(0, StrCalc.add("1,,"));
     }
+    @Test
+    public void OwnDelimeter(){
+        assertEquals(6, StrCalc.add("//;\n1;2;3"));
+    }
+    @Test
+    public void NegativeNum(){
+        assertEquals(4, StrCalc.add("//;\n1;-2;3"));
+    }
 }
